@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  background-image: url('img/main-bg.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+
+
+.facebook {
+  color: white;
+  display: none;
+}
+
+.twitter {
+  color: white;
+  display: none;
+}
+
+
+.hamburger{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  width: 100px;
+  float: left;
+  color: white;
+  display: none;
+}
+
+
+.navbar {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  font-family: sans-serif;
+  font-size: 25px;
+}
+
+.body2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 70%;
+}
+.your {
+  color: white;
+  font-family: sans-serif;
+  font-size: 75px;
+  padding: 0;
+}
+
+.personal {
+  color: white;
+  font-family: sans-serif;
+  font-size: 30px;
+  height: 0;
+}
+
+.downArrow {
+  position: fixed;
+  display: block;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  top: 85%;
+  left: 47%;
+}
+@media only screen and (max-width: 768px){
+.full-nav {
+  width: 100%;
+  position: relative;
+}
+.navbar {
+  position: absolute;
+  flex-direction: column;
+  left: -100%;
+}
+.nav-item {
+  width: 100%;
+  float: none;
+}
+.hamburger {
+  display: inline-block;
+  float: left;
+  padding: 50px;
+}
+.facebook {
+  display: inline-block;
+  float: right;
+  padding: 50px;
+}
+.twitter {
+  display: inline-block;
+  float: right;
+  padding: 50px;
+}
+}
